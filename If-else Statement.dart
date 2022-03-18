@@ -1,3 +1,30 @@
+// program 5.12
+
+  int? score;
+  stdout.write("Enter your tst score");
+  String? inputInString = stdin.readLineSync();
+  score = int.tryParse(inputInString!);
+  if (score != null) {
+    if (score >= 90) {
+      print("Your grade is A");
+    } else if (score >= 80 && score <= 89) {
+      print("your grade is b");
+    } else if (score >= 70 && score <= 79) {
+      print("your grade is c");
+    } else if (score >= 60 && score <= 69) {
+      print("your grade is d");
+    } else if (score >= 50 && score <= 59) {
+      print("your grade is e");
+    } else {
+      print("your are failed");
+    }
+  } else {
+    print("Invalid Input");
+  }
+  print("Exit Program");
+//   Enter your tst score 60
+// your grade is d
+// Exit Program
 //program 5.13
   int? unit;
   double? bill;
